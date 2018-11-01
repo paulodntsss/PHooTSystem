@@ -1,0 +1,28 @@
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+.section__jogadores {
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.section__jogadores__title {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.jogador_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

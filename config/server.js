@@ -25,12 +25,12 @@ app.use(expressSession({
     resave : false
 }));
 consign()
-    .include('./src/Auth')
-    .then('./src/routes.js')
-    .then ('./src/models')
-    .then ('./src/services')
+    .include('./src/controllers')
+    .then('./src/Auth')
     .then('./config/dataBase.js')
-    .then('./src/controllers')
+    .then('./src/models')
+    .then('./src/services')
+    .then('./src/routes.js')
     .into(app);
 
 module.exports = app;
