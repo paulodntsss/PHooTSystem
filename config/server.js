@@ -26,6 +26,7 @@ app.use(expressSession({
 }));
 consign()
     .then('./config/dataBase.js')
+    .then('./src/controllers')
     .into(app);
 
 module.exports = app;
