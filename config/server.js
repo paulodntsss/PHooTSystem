@@ -27,6 +27,7 @@ app.use(expressSession({
 consign()
     .include('./src/Auth')
     .then('./src/routes.js')
+    .then ('./src/models')
     .then('./config/dataBase.js')
     .then('./src/controllers')
     .into(app);
