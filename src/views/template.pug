@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/template/style.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css")
+        block headerCSS
+
+        title Document
+    body
+        include ../public/config/index/config.pug
+
+        header(class="header")
+            h1.header__brand #{headerBrand}
+            nav.header__nav
+                ul.header__nav__menu
+                    each item in menuList
+                        li.header__nav__menu__item
+                            a(href=item, title="title").header__nav__menu__link  #{item.toUpperCase()}
+            
+
+        block content
+
+        footer(class="footer")
+            h2 Desenvolvido por Higor, Paulo, Tiago
+

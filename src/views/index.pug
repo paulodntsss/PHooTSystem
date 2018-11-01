@@ -1,5 +1,15 @@
-extends layout
+extends ./template.pug
+
+block headerCSS
+    link(rel="stylesheet", href="css/index/style.css")
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1.section__jogadores__title Jogadores disponíveis
+    section.section__jogadores
+        if(jogadores)
+            each jogador in jogadores
+                div.section__jogadores__jogador
+                    img(src= `/${jogador.imgSRC}`, alt="Imagem Jogador")
+                    div.qualquer
+                        h3 #{jogador.name}
+                        p  #{jogador.descricao}
