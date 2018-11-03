@@ -1,12 +1,13 @@
-module.exports.home =async (application, req ,resp) => {
+module.exports.getJogador = async (application, req, resp) => {
     const dataBase = application.config.dataBase;
     const clientModel =new application.src.models.ClientDAO(dataBase);
 
+    const id = req.params.id;
+
     try {
-        const user = await clientModel.getUsers();
-        console.log(user);
+        const user = await clientModel.getUserByID(id);
         if(user) {
-            resp.render('index' , {jogadores : user});
+            resp.send(user);
         }else {
             resp.render('index' , {jogadores : []});
         }

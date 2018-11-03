@@ -26,6 +26,18 @@ class ClienteDAO {
         })
     }
 
+    getUserByID(ID) {
+        return new Promise((resolve, reject) => {
+            this.connection.query( `SELECT name, descricao , imgSRC FROM Cliente WHERE ID = '${ID}'`, (err, rows, fields) => {
+                if (err) {
+                    reject(err)
+                }else {
+                    resolve(rows[0]);
+                }
+            })
+        })
+    }
+
     updateUser (userID , userUpdates){
         return new Promise((resolve, reject) => {
             this.connection.query(`UPDATE Cliente set ?  WHERE IDCliente =  ${userID}`, userUpdates, (err, result) => {

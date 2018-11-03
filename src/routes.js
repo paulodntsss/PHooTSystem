@@ -32,5 +32,10 @@ module.exports = (application) => {
         .get(auth.authVerify, (req, resp) => {
             resp.send(req.session.userData);
         })
+    
+    application.route('/jogador/:id')
+        .get((req, resp) => {
+            application.src.controllers.jogador.getJogador(application, req, resp);
+        }) 
 
 }
