@@ -2,7 +2,7 @@ class ClienteDAO {
     constructor(connection) {
         this.connection = connection();
     }
-    getUsers(userName) {
+    getUsers() {
         return new Promise((resolve, reject) => {
             this.connection.query('SELECT * FROM Cliente', (err, rows, fields) => {
                 if (err) {
