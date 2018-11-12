@@ -20,12 +20,17 @@ module.exports = (application) => {
             application.src.controllers.index.home(application, req , resp);
         })
 
-    application.route('/cadastro')
+    application.route('/cadastroJogador')
         .get((req, resp) => {
-            application.src.controllers.cadastro.view(application, req, resp);
+            application.src.controllers.cadastroJogador.view(application, req, resp);
         })
         .post(uploadService.single('file') , (req, resp) => {
-            application.src.controllers.cadastro.save(application, req, resp);
+            application.src.controllers.cadastroJogador.save(application, req, resp);
+        })
+
+    application.route('/cadastroOlheiro')
+        .get((req, resp) => {
+            application.src.controllers.cadastroOlheiro.view(application, req , resp);
         })
 
     application.route('/testando')

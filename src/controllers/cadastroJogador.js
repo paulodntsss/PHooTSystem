@@ -1,7 +1,7 @@
 const md5 = require('md5');
 
 module.exports.view = (application, req, resp) => {
-    resp.render('cadastro');
+    resp.render('cadastroJogador');
 }
 
 module.exports.save = async (application, req, resp) => {
