@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="author" content="Tiago Higor Paulo")
+        meta(name="description" content="Cadastro de Olheiro")
+        link(rel="stylesheet", href="css/cadastro/cadastroEscola.css")
+        title Cadastrar Escola
+    body
+        form(action="/cadastroEscola", method="post")
+            .row
+                .form-group
+                    label(for="#name") Nome:
+                    input(type="text", placehold="Digite o nome da escola: ", name="name" id="name")
+
+                .form-group
+                    label(for="#phone") Telefone:
+                    input(type="tel" , placehold="Digite seu telefone", name="phone" id="phone")
+
+            .row
+                .form-group
+                    label(for="#rua") RUA:
+                    input(type="text", placehold="Digite sua Rua", name="rua")
+
+           
+                .form-group
+                    label(for="#numero") Numero:
+                    input(type="text", placehold="Digite seu número", name="numero")
+            .row
+                .form-group
+                    label(for="#bairro") Bairro:
+                    input(type="text", placehold="Digite seu bairro", name="bairro")
+
+            
+                .form-group
+                    label(for="#cidade") Cidade:
+                    input(type="text", placehold="Digite sua cidade", name="cidade")
+            .row
+                .form-group
+                    label(for="#complemento") Complemeto:
+                    input(type="text", placehold="Digite o complement", name="complemento")
+            
+                .form-group
+                    label(for="#estado") Estado:
+                    input(type="text", placehold="Digite o estado", name="estado")
+                .form-group
+                    label(for="")
+                    input(type="file", name="file", id="file")
+
+            button(type="submit") Enviar
+

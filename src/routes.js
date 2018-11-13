@@ -43,4 +43,10 @@ module.exports = (application) => {
             application.src.controllers.jogador.getJogador(application, req, resp);
         }) 
 
+    application.route('/cadastroEscola')
+        .get((req, resp) => {
+            application.src.controllers.cadastroEscola.view(application, req , resp);
+        })
+
+
 }
