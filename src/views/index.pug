@@ -9,9 +9,11 @@ block content
         if(jogadores)
             each jogador in jogadores
                 div.section__jogadores__jogador
-                    if jogador.imgSRC
-                        img(src= `/${jogador.imgSRC}`, alt="Imagem Jogador")
+                    if jogador.FOTO
+                        img(src= `/${jogador.FOTO}`, alt="Imagem Jogador")
                     div.qualquer
-                        h3 #{jogador.name}
-                        p  #{jogador.descricao}
-                        a(href= `jogador/${jogador.ID}`, title="Ver mais") Ver mais 
+                        h3 #{jogador.NOME}
+                        p  #{jogador.IDADE}
+                        P #{jogador.DESCRICAO}
+                        a(href= `jogador/${jogador.IDJogador}`, title="Ver mais") Ver mais
+    

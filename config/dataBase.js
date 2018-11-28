@@ -5,7 +5,7 @@ const connection = () => {
         host: 'localhost',
         user: 'root',
         password: 'admin',
-        database: 'Test'
+        database: 'virtualWorld'
     });
 }
 
