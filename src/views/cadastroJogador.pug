@@ -10,64 +10,76 @@ html(lang="en")
         form(action="/cadastroJogador", method="post" enctype="multipart/form-data")
             .row
                 .form-group
-                    label(for="#name") Nome:
-                    input(type="text", name="name" id="name")
+                    label(for="#nome") Nome:
+                    input(type="text", name="nome" id="nome" required placeholder="Digite seu nome" )
                 .form-group
                     label(for="#password") Senha :
-                    input(type="password", name="password" id="password")
+                    input(type="password", name="password" id="password" required placeholder="Digite sua senha")
+                .form-group
+                    label(for="#descricao") Descrição :
+                    input(type="text" name="descricao" , id="descricao" required placeholder="Digite sua descricao")
 
             .row
                 .form-group
-                    label(for="#phone") Telefone :
-                    input(type="tel", name="phone" id="phone")
+                    label(for="#telefone") Telefone :
+                    input(type="text", name="numero" id="numero" required placeholder="Digite o numero do seu numero de telefone")
+                .form-group
+                    label(for="#ddd") DDD:
+                    input(type="text", name="ddd" id="ddd" placeholder="Digite seu DDD" maxlength="2")
                 .form-group
                     label(for="#cpf") CPF :
-                    input(type="text", name="cpf" id="cpf")
+                    input(type="text", name="cpf" id="cpf" required placeholder= "Digite seu cpf")
 
             .row
                 .form-group
                     label(for="#rg") RG :
-                    input(type="text", name="rg" id="rg")
+                    input(type="text", name="rg" id="rg" required placeholder="Digite seu rg")
                 .form-group
-                    label(for="#height") Altura :
-                    input(type="number", name="height" id="height")
+                    label(for="#altura") Altura :
+                    input(type="number", name="altura" id="altura" required placeholder="Digite sua altura" step="any")
+                .form-group
+                    label(for="#posicao") Posição :
+                    input(type="text", name="posicao" id="posicao" placeholder="Digite sua posição")
 
             .row
                 .form-group
-                    label(for="#price") Preço: 
-                    input(type="number", name="price" id="price")
+                    label(for="#preco") Preço: 
+                    input(type="number", name="preco" id="preco" required placeholder="Digite seu preço" step="any")
                 .form-group
-                    label(for="#weight") Peso : 
-                    input(type="number", name="weight" id="weight")
+                    label(for="#peso") Peso : 
+                    input(type="number", name="peso" id="peso" required placeholder="Digite seu peso" step="any")
+                .form-group
+                    label(for="#email") Email:
+                    input(type="email", name="email" id="email" placeholder="Digite seu email")
 
             .row
                 .form-group
-                    label(for="#age") Idade :
-                    input(type="number", name="age" id="age")
+                    label(for="#idade") Idade :
+                    input(type="number", name="idade" id="idade" required placeholder="Digite sua idade")
                 .form-group
                     label(for="#rua") Rua :
-                    input(type="text", name="rua" , id="rua")
+                    input(type="text", name="rua" , id="rua" required placeholder="Digite sua rua")
 
             .row
                 .form-group
-                    label(for="#numero") Numero Casa :
-                    input(type="text", name="numero" , id="numero")
+                    label(for="#numeroCasa") Numero Casa :
+                    input(type="text", name="numeroCasa" , id="numeroCasa" required placeholder="Digite o numero da sua casa")
                 .form-group
                     label(for="#bairro") Bairro :
-                    input(type="text", name="bairro" id="bairro")
+                    input(type="text", name="bairro", id="bairro", required, placeholder="Digite seu bairro")
 
             .row
                 .form-group
                     label(for="#cidade") Cidade :
-                    input(type="text", name="cidade",, id="cidade")
+                    input(type="text", name="cidade", id="cidade" required placeholder="Digite o nome da sua cidade")
                 .form-group
                     label(for="#complemento") Complemento :
-                    input(type="text", name="complemento", id="complemento")
+                    input(type="text", name="complemento", id="complemento" required placeholder="Digite um complemento")
 
             .row
                 .form-group
                     label(for="#estado") Estado : 
-                    input(type="text", name="estado", id="estado")
+                    input(type="text", name="estado", id="estado" required placeholder="Digite o estado")
                 .form-group
                     label(for="#file") Imagem :
                     input(type="file", name="file" id="file")
