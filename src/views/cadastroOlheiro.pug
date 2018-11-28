@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="author" content="Tiago Higor Paulo")
+        meta(name="description" content="Cadastro de Olheiro")
+        link(rel="stylesheet", href="css/cadastro/cadastroOlheiro.css")
+        title Cadastrar Olheiro
+    body
+        form(action="/cadastroOlheiro", method="post")
+            .row
+                .form-group
+                    label(for="#name") Nome:
+                    input(type="text", placehold="Digite seu nome", name="name" id="name")
+
+                .form-group
+                    label(for="#password") Senha:
+                    input(type="password", placehold="Digite sua senha", name="password" id="password")
+                
+
+            .row
+                .form-group
+                    label(for="#phone") Telefone:
+                    input(type="tel" , placehold="Digite seu telefone", name="phone" id="phone")
+
+                .form-group
+                    label(for="#cpf") CPF:
+                    input(type="text", placehold="Digite seu cpf", name="cpf" id="cpf")
+            .row
+                .form-group
+                    label(for="#rg") RG:
+                    input(type="text", placehold="Digite seu rg", name="rg" id="rg")
+
+                .form-group
+                    label(for="#rua") RUA:
+                    input(type="text", placehold="Digite sua Rua", name="rua")
+
+            .row
+                .form-group
+                    label(for="#numero") Numero:
+                    input(type="text", placehold="Digite seu número", name="numero")
+
+                .form-group
+                    label(for="#bairro") Bairro:
+                    input(type="text", placehold="Digite seu bairro", name="bairro")
+
+            .row
+                .form-group
+                    label(for="#cidade") Cidade:
+                    input(type="text", placehold="Digite sua cidade", name="cidade")
+
+                .form-group
+                    label(for="#complemento") Complemeto:
+                    input(type="text", placehold="Digite o complement", name="complemento")
+            .row
+                .form-group
+                    label(for="#estado") Estado:
+                    input(type="text", placehold="Digite o estado", name="estado")
+                .form-group
+                    label(for="")
+                    input(type="file", name="file", id="file")
+
+            button(type="submit") Enviar
+

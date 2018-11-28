@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/cadastro/cadastroOlheiro.css")
+        title Cadastro Jogador
+    body
+        form(action="/cadastroJogador", method="post" enctype="multipart/form-data")
+            .row
+                .form-group
+                    label(for="#name") Nome:
+                    input(type="text", name="name" id="name")
+                .form-group
+                    label(for="#password") Senha :
+                    input(type="password", name="password" id="password")
+
+            .row
+                .form-group
+                    label(for="#phone") Telefone :
+                    input(type="tel", name="phone" id="phone")
+                .form-group
+                    label(for="#cpf") CPF :
+                    input(type="text", name="cpf" id="cpf")
+
+            .row
+                .form-group
+                    label(for="#rg") RG :
+                    input(type="text", name="rg" id="rg")
+                .form-group
+                    label(for="#height") Altura :
+                    input(type="number", name="height" id="height")
+
+            .row
+                .form-group
+                    label(for="#price") Preço: 
+                    input(type="number", name="price" id="price")
+                .form-group
+                    label(for="#weight") Peso : 
+                    input(type="number", name="weight" id="weight")
+
+            .row
+                .form-group
+                    label(for="#age") Idade :
+                    input(type="number", name="age" id="age")
+                .form-group
+                    label(for="#rua") Rua :
+                    input(type="text", name="rua" , id="rua")
+
+            .row
+                .form-group
+                    label(for="#numero") Numero Casa :
+                    input(type="text", name="numero" , id="numero")
+                .form-group
+                    label(for="#bairro") Bairro :
+                    input(type="text", name="bairro" id="bairro")
+
+            .row
+                .form-group
+                    label(for="#cidade") Cidade :
+                    input(type="text", name="cidade",, id="cidade")
+                .form-group
+                    label(for="#complemento") Complemento :
+                    input(type="text", name="complemento", id="complemento")
+
+            .row
+                .form-group
+                    label(for="#estado") Estado : 
+                    input(type="text", name="estado", id="estado")
+                .form-group
+                    label(for="#file") Imagem :
+                    input(type="file", name="file" id="file")
+            button(type="submit") Enviar
